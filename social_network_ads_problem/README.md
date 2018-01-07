@@ -44,7 +44,7 @@ This is how I used it in the model
 ```python
 from sklearn.preprocessing import MinMaxScaler
 scaler = MinMaxScaler()
-X_train = scscaler_X.fit_transform(X_train)
+X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 ```
 Now all that is left in the preprocessing step is to assign the right shapes to the input and output matrices.
