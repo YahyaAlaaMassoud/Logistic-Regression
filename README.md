@@ -97,7 +97,7 @@ You can get the confusion matrix using **get_confusion_matrix** function.
 confusion_matrix = logistic_regression_object.get_confusion_matrix()
 ```
 The **confusion matrix** is the matrix that contains the result of the performance of your classifier.
-This is how a confusion matrix is organized:
+This is how a confusion matrix is organized:<br/>
 ![confusion matrix.](https://github.com/YahyaAlaaMassoud/Logistic-Regression/blob/master/images/confusion_matrix.png
 "confusion matrix")<br/>
 You can get the accuracy by calculating the following
@@ -111,28 +111,3 @@ You can also get the weights vector and bias using **get_weights** and **get_bia
 ### Examples on different datasets.
  - [**Social Network Ads Problem**](https://github.com/YahyaAlaaMassoud/Logistic-Regression/tree/master/social_network_ads_problem).
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
