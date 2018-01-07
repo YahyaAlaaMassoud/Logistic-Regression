@@ -130,7 +130,7 @@ Will result in:
 >test accuracy on classifier 2: 90.0%<br/>
 >test accuracy on classifier 3: 72.0%<br/>
 
-**If you have any question don't hesitate to contact me on my email: *yahyaalaamassoud@gmail.com***
+**If you have any question don't hesitate to contact me on my email: *yahyaalaamassoud@gmail.com*.**
 **Thank you.**
 <hr/>
 
