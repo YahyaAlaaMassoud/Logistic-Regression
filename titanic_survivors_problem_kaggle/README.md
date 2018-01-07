@@ -124,6 +124,7 @@ Will result in:
 >train accuracy on classifier 1: 80.0224%<br/>
 >train accuracy on classifier 2: 78.9001%<br/>
 >train accuracy on classifier 3: 78.6756%<br/>
+This classifier has got 75% accuracy in **Kaggle Titanic Survivors Competition**.
 
 **If you have any question don't hesitate to contact me on my email: *yahyaalaamassoud@gmail.com*.**
 **Thank you.**
