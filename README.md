@@ -92,10 +92,25 @@ Then call the function **optimize** to begin the learning process.
 logistic_regression_object.optimize()
 ```
 
+You can get the confusion matrix using **get_confusion_matrix** function.
+```python
+confusion_matrix = logistic_regression_object.get_confusion_matrix()
+```
+The **confusion matrix** is the matrix that contains the result of the performance of your classifier.
+This is how a confusion matrix is organized:
+![confusion matrix.](https://github.com/YahyaAlaaMassoud/Logistic-Regression/blob/master/images/confusion_matrix.png
+"confusion matrix")<br/>
+You can get the accuracy by calculating the following
+```python
+accuracy = (confusion_matrix[0, 0] + confusion_matrix[1, 1]) / np.sum(confusion_matrix)
+```
+You can also get the weights vector and bias using **get_weights** and **get_bias** functions.
+
 <hr/>
 
 ### Examples on different datasets.
-
+ - [**Social Network Ads Problem**](https://github.com/YahyaAlaaMassoud/Logistic-Regression/tree/master/social_network_ads_problem).
+ 
 
 
 
