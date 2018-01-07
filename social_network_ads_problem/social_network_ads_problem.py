@@ -10,16 +10,21 @@ from sklearn.cross_validation import train_test_split
 from sklearn.preprocessing import MinMaxScaler, LabelEncoder
 #--------------------------Data Preprocessing--------------------------#
 dataset = pd.read_csv('Social Network Ads Dataset/Social_Network_Ads.csv')
+# Choosing columns
 X = dataset.iloc[:, [1, 2, 3]].values
 Y = dataset.iloc[:, 4].values
+# Splitting data into train and test sets
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = 0.25, random_state = 0)
+# Encoding gender column
 labelencoder_X = LabelEncoder()
 X_train[:, 0] = labelencoder_X.fit_transform(X_train[:, 0])
 X_test[:, 0] = labelencoder_X.fit_transform(X_test[:, 0])
 X_train = X_train.astype(np.float64)
+# Scaling features
 sc_X = MinMaxScaler()
 X_train = sc_X.fit_transform(X_train)
 X_test = sc_X.transform(X_test)
+# Getting the proper shapes
 Y_train = Y_train.reshape(300, 1)
 Y_test = Y_test.reshape(100, 1)
 X_train = X_train.T
