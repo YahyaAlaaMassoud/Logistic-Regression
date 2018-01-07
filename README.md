@@ -111,3 +111,4 @@ You can also get the weights vector and bias using **get_weights** and **get_bia
 ### Examples on different datasets.
  - [**Social Network Ads Problem**](https://github.com/YahyaAlaaMassoud/Logistic-Regression/tree/master/social_network_ads_problem).
  - [**Pima Indians Diabetes Problem**](https://github.com/YahyaAlaaMassoud/Logistic-Regression/tree/master/pima_diabetes_problem_uci).
+ - [**Titanic Survivors Problem on Kaggle**](https://github.com/YahyaAlaaMassoud/Logistic-Regression/tree/master/titanic_survivors_problem_kaggle)
