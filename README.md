@@ -74,6 +74,8 @@ Then we can compute the cost by summing all the losses over all **m** training e
 cost = (-1 / m) * (np.sum(y * np.log(y_hat) + (1 - y) * np.log(1 - y_hat)))
 ```
 
+<hr/>
+
 ### How to use the classifier?
 To create a new object of the classifier, you have to specify:
  - The input and output matrices.
@@ -89,6 +91,8 @@ Then call the function **optimize** to begin the learning process.
 ```python
 logistic_regression_object.optimize()
 ```
+
+<hr/>
 
 ### Examples on different datasets.
 
