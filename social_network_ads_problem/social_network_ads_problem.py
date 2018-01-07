@@ -2,8 +2,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import sys, os
-sys.path.append(os.path.abspath(os.path.join('..', '')))
-from logistic_regression_class import LogisticRegression
+sys.path.append(os.path.abspath(os.path.join('..', 'logistic_regression_class')))
+from logistic_regression_class.logistic_regression_class import LogisticRegression
 from sklearn.metrics import confusion_matrix
 from sklearn.cross_validation import train_test_split
 from sklearn.preprocessing import MinMaxScaler, LabelEncoder
@@ -24,7 +24,7 @@ Y_test = Y_test.reshape(100, 1)
 X_train = X_train.T
 X_test = X_test.T
 Y_train = Y_train.T
-Y_test = Y_test.T      
+Y_test = Y_test.T  
 learning_rates = [1, 0.5, 0.05, 0.005]
 costs = []
 for i in learning_rates: 
@@ -59,3 +59,13 @@ cm = confusion_matrix(Y_test.T, Y_prediction_test.T)
 
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
