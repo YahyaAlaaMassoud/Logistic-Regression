@@ -1,3 +1,4 @@
+#--------------------------------Imports--------------------------------#
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -7,7 +8,7 @@ from logistic_regression_class.logistic_regression_class import LogisticRegressi
 from sklearn.metrics import confusion_matrix
 from sklearn.cross_validation import train_test_split
 from sklearn.preprocessing import MinMaxScaler, LabelEncoder
-
+#--------------------------Data Preprocessing--------------------------#
 dataset = pd.read_csv('Social Network Ads Dataset/Social_Network_Ads.csv')
 X = dataset.iloc[:, [1, 2, 3]].values
 Y = dataset.iloc[:, 4].values
@@ -25,47 +26,36 @@ X_train = X_train.T
 X_test = X_test.T
 Y_train = Y_train.T
 Y_test = Y_test.T  
+#--------------------------Learning Process----------------------------#
 learning_rates = [1, 0.5, 0.05, 0.005]
 costs = []
+confusion_matrix_train = []
+confusion_matrix_test = []
 for i in learning_rates: 
-    lr = LogisticRegression(X_train, Y_train, i, 2500, True) 
-    costs.append((i, lr.optimize()))
-    Y_prediction_train = lr.predict(X_train, Y_train)
-    print("train")
-    print(lr.get_confusion_matrix())
-    Y_prediction_test = lr.predict(X_test, Y_test)
-    print("test")
-    print(lr.get_confusion_matrix())
-    
-    
+    classifier = LogisticRegression(X_train, Y_train, i, 2500, True) 
+    costs.append((i, classifier.optimize()))
+    Y_prediction_train = classifier.predict(X_train, Y_train)
+    confusion_matrix_train.append(classifier.get_confusion_matrix())
+    Y_prediction_test = classifier.predict(X_test, Y_test)
+    confusion_matrix_test.append(classifier.get_confusion_matrix())
+#--------------------------Comparing classifiers-----------------------#
 for i in costs:
     learning_rate, cost = i
     plt.plot(np.squeeze(cost), label= "learning rate = " + str(learning_rate))
 plt.ylabel('cost')
 plt.xlabel('iterations')
-
 legend = plt.legend(loc='upper center', shadow=True)
 frame = legend.get_frame()
 frame.set_facecolor('0.90')
 plt.show()
-Y_prediction_train = lr.predict(X_train, Y_train)
-cm = lr.get_confusion_matrix()
-Y_prediction_test = lr.predict(X_test, Y_test)
-cm = lr.get_confusion_matrix()
-Y_prediction_train = lr.predict(X_train, Y_train)
-print("train accuracy: {} %".format(100 - np.mean(np.abs(Y_prediction_train - Y_train)) * 100))
-print("test accuracy: {} %".format(100 - np.mean(np.abs(Y_prediction_test - Y_test)) * 100))
-cm = confusion_matrix(Y_test.T, Y_prediction_test.T)
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+#---------------------------Calculating accuracy------------------------#
+classifier_number = 0
+for confusion_mat in confusion_matrix_train:
+    train_accuracy = (confusion_mat[0, 0] + confusion_mat[1, 1]) / np.sum(confusion_mat)
+    print("train accuracy on classifier " + str(classifier_number) + ": " + str(np.round(train_accuracy * 100, 4)) + '%')
+    classifier_number += 1
+classifier_number = 0
+for confusion_mat in confusion_matrix_test:
+    test_accuracy = (confusion_mat[0, 0] + confusion_mat[1, 1]) / np.sum(confusion_mat)
+    print("test accuracy on classifier " + str(classifier_number) + ": " + str(np.round(test_accuracy * 100, 4)) + '%')
+    classifier_number += 1    
