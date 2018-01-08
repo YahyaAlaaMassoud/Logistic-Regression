@@ -1,6 +1,13 @@
 # **Logistic Regression**
 This repo contains my own implementation for ***Logistic Regression***, and examples on applying it to different datasets with 
 explanation for each example about data preprocessing step, and the learning algorithm behavior.<br/>
+
+ - [**Social Network Ads Problem**](https://github.com/YahyaAlaaMassoud/Logistic-Regression/tree/master/social_network_ads_problem).
+ - [**Pima Indians Diabetes Problem**](https://github.com/YahyaAlaaMassoud/Logistic-Regression/tree/master/pima_diabetes_problem_uci).
+ - [**Titanic Survivors Problem on Kaggle**](https://github.com/YahyaAlaaMassoud/Logistic-Regression/tree/master/titanic_survivors_problem_kaggle)
+
+<hr/>
+
 ### What is Logistic Regression?
 **Logistic Regression** is a supervised learning technique that is used for binary classification problems, where the dataset 
 conatins one or more independant varibales that determine a binary outcome (0 or 1).<br/>
@@ -107,8 +114,3 @@ accuracy = (confusion_matrix[0, 0] + confusion_matrix[1, 1]) / np.sum(confusion_
 You can also get the weights vector and bias using **get_weights** and **get_bias** functions.
 
 <hr/>
-
-### Examples on different datasets.
- - [**Social Network Ads Problem**](https://github.com/YahyaAlaaMassoud/Logistic-Regression/tree/master/social_network_ads_problem).
- - [**Pima Indians Diabetes Problem**](https://github.com/YahyaAlaaMassoud/Logistic-Regression/tree/master/pima_diabetes_problem_uci).
- - [**Titanic Survivors Problem on Kaggle**](https://github.com/YahyaAlaaMassoud/Logistic-Regression/tree/master/titanic_survivors_problem_kaggle)
