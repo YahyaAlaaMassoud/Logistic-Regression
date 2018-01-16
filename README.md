@@ -4,7 +4,9 @@ explanation for each example about data preprocessing step, and the learning alg
 
  - [**Social Network Ads Problem**](https://github.com/YahyaAlaaMassoud/Logistic-Regression/tree/master/social_network_ads_problem).
  - [**Pima Indians Diabetes Problem**](https://github.com/YahyaAlaaMassoud/Logistic-Regression/tree/master/pima_diabetes_problem_uci).
- - [**Titanic Survivors Problem on Kaggle**](https://github.com/YahyaAlaaMassoud/Logistic-Regression/tree/master/titanic_survivors_problem_kaggle)
+ - [**Titanic Survivors Problem on Kaggle**](https://github.com/YahyaAlaaMassoud/Logistic-Regression/tree/master/titanic_survivors_problem_kaggle)<br/>
+
+I made this repo to apply logistic regression on different data sets for better understanding of the algorithm and how it works, after completing the **Neural Networks and Deep Learning** course from ***deeplearning.ai*** taught by **Andrew Ng.** on coursera, [***Certificate***](https://www.coursera.org/account/accomplishments/verify/49MJ6HPGPH2M).
 
 <hr/>
 
@@ -115,5 +117,4 @@ You can also get the weights vector and bias using **get_weights** and **get_bia
 
 <hr/>
 
-I made this repo to apply logistic regression on different data sets for better understanding of the algorithm and how it works, after accomplishing the **Neural Networks and Deep Learning** course from ***deeplearning.ai*** on coursera.
-[***Certificate***](https://www.coursera.org/account/accomplishments/verify/49MJ6HPGPH2M).
+
