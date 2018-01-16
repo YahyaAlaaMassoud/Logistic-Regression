@@ -1,5 +1,5 @@
 # **Logistic Regression**
-This repo contains my own implementation for ***Logistic Regression***, and examples on applying it to different datasets with 
+This repo contains my implementation for ***Logistic Regression***, and examples on applying it to different datasets with 
 explanation for each example about data preprocessing step, and the learning algorithm behavior.<br/>
 
  - [**Social Network Ads Problem**](https://github.com/YahyaAlaaMassoud/Logistic-Regression/tree/master/social_network_ads_problem).
@@ -114,3 +114,6 @@ accuracy = (confusion_matrix[0, 0] + confusion_matrix[1, 1]) / np.sum(confusion_
 You can also get the weights vector and bias using **get_weights** and **get_bias** functions.
 
 <hr/>
+
+I made this repo to apply logistic regression on different data sets for better understanding of the algorithm and how it works, after accomplishing the **Neural Networks and Deep Learning** course from ***deeplearning.ai*** on coursera.
+[***Certificate***](https://www.coursera.org/account/accomplishments/verify/49MJ6HPGPH2M).
