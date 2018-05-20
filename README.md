@@ -36,7 +36,7 @@ features and paterns from the input data.<br/>
 Then all what is left to do is to feed this data into our Logistic Regression Classifier, the image below describes how to the data is fed
 to the classifier.<br/>
 <p align="center">
-  <img src="https://github.com/YahyaAlaaMassoud/Logistic-Regression/blob/master/images/logistic_regression.png">
+  <img src="https://github.com/YahyaAlaaMassoud/Logistic-Regression/images/logistic_regression.png">
 </p>
 
 <hr/>
@@ -52,7 +52,7 @@ Here comes the power of the **activation function**.
 ### What is the activation function?
 There is a function that we will use that will easily map any real value to a value between 0 and 1, which is the **Sigmoid Activation Function**.<br/>
 <p align="center">
-  <img src="https://github.com/YahyaAlaaMassoud/Logistic-Regression/blob/master/images/sigmoid_activation.gif">
+  <img src="https://github.com/YahyaAlaaMassoud/Logistic-Regression/images/sigmoid_activation.gif">
 </p>
 <br/>
 Then we can put a threshold value as 0.5, if the sigmoid output is bigger than 0.5, then the prediction result is 1, else the prediction is 0.
@@ -110,7 +110,7 @@ confusion_matrix = logistic_regression_object.get_confusion_matrix()
 The **confusion matrix** is the matrix that contains the result of the performance of your classifier.
 This is how a confusion matrix is organized:<br/>
 <p align="center">
-  <img src="https://github.com/YahyaAlaaMassoud/Logistic-Regression/blob/master/images/confusion_matrix.png">
+  <img src="https://github.com/YahyaAlaaMassoud/Logistic-Regression/images/confusion_matrix.png">
 </p>
 <br/>
 You can get the accuracy by calculating the following
