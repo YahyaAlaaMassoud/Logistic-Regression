@@ -52,7 +52,7 @@ Here comes the power of the **activation function**.
 ### What is the activation function?
 There is a function that we will use that will easily map any real value to a value between 0 and 1, which is the **Sigmoid Activation Function**.<br/>
 <p align="center">
-  <img src="https://github.com/YahyaAlaaMassoud/Logistic-Regression/blob/master/images/sigmoid_activation.gif">
+  <img src="https://raw.githubusercontent.com/YahyaAlaaMassoud/Logistic-Regression/master/images/sigmoid_activation.gif">
 </p>
 <br/>
 Then we can put a threshold value as 0.5, if the sigmoid output is bigger than 0.5, then the prediction result is 1, else the prediction is 0.
